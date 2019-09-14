@@ -1,0 +1,6 @@
+---
+- name: Grafana Installation 
+  hosts: grafana_server
+  connection: local
+  roles:
+     - { role: ../roles/grafana_install_rpm }

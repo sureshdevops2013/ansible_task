@@ -1,0 +1,2 @@
+[grafana]
+grafana_server ansible_host=172.31.19.59
