@@ -5,11 +5,11 @@
     name: https://dl.grafana.com/oss/release/grafana-6.3.5-1.x86_64.rpm
     state: present
   become: true
-  #become_user: david
+  #become_user: babu
   become_method: sudo
 
 - name: Executing a Command Using Shell Module 
   shell:  /sbin/chkconfig --add grafana-server; systemctl enable grafana-server.service; systemctl daemon-reload; systemctl start grafana-server; systemctl status grafana-server
   become: true
-  #become_user: david
+  #become_user: babu
   become_method: sudo
