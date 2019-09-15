@@ -1,4 +1,4 @@
 # ansible_task
 
-Installtion Command
+# Installtion Command
 ansible-playbook -i inventory/grafana playbooks/grafana_install.yml
